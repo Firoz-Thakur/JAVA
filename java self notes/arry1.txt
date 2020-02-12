@@ -1,0 +1,22 @@
+1)int arr[]; is not actually the array ,is actualy the reference variable,reference variable are same as that of
+internal pointer.
+2)int c++ int ar[]=new int[6] arry is created using dma.
+3)Also in java array is created same as created in c++ using new operator.
+4)array object having its own lenght varible.
+5)some declaration.
+   int ar[]=new int[] {2,4,3,4,2}
+   int ar[]=new int[]{3,2,4,3,4,3}  // error
+   int ar[]=new int[5]{3,5,6,3,5} //error can not mentio size and values together.
+   int ar[]={3,5,3,5,5,3} //valid
+6)array can never be blank,because there is no concept of garbage.
+7)by default value of array are zero.
+8)
+  consider a code-->
+fun()
+{
+   int arr[];  //remember this is not an arry,the variable made inside the fun are local varible,and and are always blannk while
+               //instance variable have by defalt value=0,(which are intialized when the object is created called instace var)
+
+   ar[0]=34;  // we are trying to acces the refernce the var which having blank value ,so it will give us compile time error.
+   ar[1]=40;   //error
+}
