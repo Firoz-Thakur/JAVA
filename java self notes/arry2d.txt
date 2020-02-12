@@ -1,0 +1,41 @@
+//2d array-->>
+
+//1) int arr[][]; or int[][] is not aray but is reference var,which will poiint 2d arry
+//3) int arr[][]=new int[][]; //error
+//4) int ar[][]=new int[][4]  //error;
+//5) int ar[][]=new int[5][]  //true;
+//6) int [][]a=new int [][]{{3,4},{4,5},{3,6}};
+ // it will contain an reference arry(size will be three)(wiil contain the reference of 1 d array) which will further point to the another 1 d array(3 arry each having 2 element).
+//7)
+
+fun()
+{
+ int ar[][]=new int[4][];// 1st 1-d element is 4 size arry, a[0] mean element 1st 1d arry which is furthher pointing to other 1d arry.will contain a[0]=0 generly  a[0]->a[0][1][3] ,but her a[0]->null so it will give 
+                                  //run time error.
+  print(a[0][0]);
+}
+-->whenever we create any var or arry using dma will always contain null not garbage.
+
+fun()
+{
+  print(a[0])  // no error
+}
+ int ar[][]=new int[4][];
+  print(a.length) -->4
+  print(a[0].length) -->run time eror //a[0].length meana a[0] pointing to whom ,that arrys length,but a[0] not  pointing to anyone,so rune time error.
+
+fun()
+{
+ int ar[][]=new int[4][]; inttially ar[0],..ar[3] was null .
+  ar[0]=new int[5]; now by dma we allocated memory for new 1 d arry,whose reference is inside the ar[0]
+  ar[1]=new int[3]; //now we can acess ar[0][0]..ar[0][4]
+                  // also ar[1][0]....ar[1][2]-->whose by default value will be zero.
+               //as we know every object have their own length variable ,now we can acess ar[0].length-->>5,ar[1].length-->3,ar[2].length-->>error because ar[2] is null ,it hav'nt contain any reference.
+ }
+
+
+
+
+
+
+
