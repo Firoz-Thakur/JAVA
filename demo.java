@@ -1,5 +1,5 @@
 import java.util.*;
-class Circle()
+class Circle
 {
 	 double radius;
 	 double area()
@@ -17,7 +17,7 @@ public class demo {
 	
 		// TODO Auto-generated method stub
      Scanner sc=new Scanner(System.in); 
-	 int arr[]=new Circle[4];
+	 Circle arr[]=new Circle[4];
      for(int i=0;i<arr.length;i++)
      {
     	 arr[i]=new Circle();
